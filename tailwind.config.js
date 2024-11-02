@@ -1,0 +1,35 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	theme: {
+		colors: {
+			primary100: '#004289',
+			primary200: '#0F5096',
+			black: '#000000',
+			base100: '#1C1C1C',
+			base200: '#585757',
+			base300: '#969696',
+			base600: '#FFFFFF',
+			error: '#EF4147',
+			bg100: '#FEFEFE',
+			bg200: '#F8F8F8',
+			bg300: '#EFEFEF',
+		},
+		spacing: {
+			1: '5px',
+			2: '10px',
+			3: '15px',
+			4: '20px',
+			5: '25px',
+			6: '30px',
+			7: '35px',
+			8: '40px',
+			9: '45px',
+			10: '50px',
+			11: '55px',
+			12: '60px',
+		},
+		extend: {},
+	},
+	plugins: [],
+};

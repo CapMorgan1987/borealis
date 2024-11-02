@@ -1,0 +1,23 @@
+.custom-radio {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	input[type='radio'] {
+		display: none;
+	}
+
+	.radio-circle {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid theme('colors.primary100');
+		position: relative;
+		margin-right: 8px;
+	}
+
+	input[type='radio']:checked + .radio-circle {
+		border-color: theme('colors.primary100');
+		background-color: theme('colors.primary100');
+	}
+}

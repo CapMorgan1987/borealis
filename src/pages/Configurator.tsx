@@ -93,11 +93,10 @@ const Configurator = observer(() => {
 	useEffect(() => {
 		fetchManufacturers()
 			.then((response) => setManufacturers(response))
-			.catch((error) => console.log(error));
-
-		fetchServices()
-			.then((response) => setServices(response))
-			.catch((error) => console.log(error));
+			.catch((error) => setAlert(error)),
+			fetchServices()
+				.then((response) => setServices(response))
+				.catch((error) => setAlert(error));
 
 		configStore.loadFromLocalStorage();
 	}, []);

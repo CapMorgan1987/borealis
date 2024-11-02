@@ -20,8 +20,6 @@ export default function Button({
 }: ButtonProps) {
 	const location = useLocation();
 
-	console.log(location.pathname);
-
 	return (
 		<>
 			{to ? (
